@@ -1,0 +1,123 @@
+@import "vendors/bootstrap";
+@import "vendors/media";
+
+@font-face {
+    font-family: Benton;
+    src: url(../font/BentonSansCond-Bold.otf);
+}
+
+$font: 16px;
+$yellow: #feff01;
+
+body {
+  font-size: $font;
+  font-family: Benton;
+  letter-spacing: 5px;
+  background-color: grey;
+  .jumbotron {
+    display: none;
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: white;
+    .row {
+      position: relative;
+      height: 100%;
+
+      #primary {
+        height: 100%;
+        display: none;
+
+        #logo {
+          height: 20%;
+          display: none;
+          #logo-img{
+            width: 15%;
+            margin-top: 20px;
+          }
+        }
+
+        #text {
+          position: relative;
+          width: 50%;
+          height: 60%;
+          margin: 10% 25%;
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: flex-start;
+
+
+          h1 {
+            position: absolute;
+            left: 0;
+            bottom: 80%;
+            font-size: 13rem;
+            color: $yellow;
+            letter-spacing: 20px;
+            display: none;
+          }
+
+          #black-container {
+            position: absolute;
+            left: 0;
+            bottom: 70%;
+            margin-bottom: 40px;
+            background-color: black;
+            line-height: 5px;
+            display: none;
+            #black {
+
+              font-size: 2rem;
+              color: white;
+              position: relative;
+              bottom: -9px;
+            }
+          }
+
+          #denim  {
+            position: absolute;
+            left: 0;
+            bottom: 40%;
+            display: none;
+            p {
+              font-size: 7rem;
+              line-height: 7rem;
+              letter-spacing: 5px;
+
+            }
+
+          }
+          #link-container {
+            position: absolute;
+            left: -15px;
+            bottom: 25%;
+            margin-top: 20px;
+            //background-color: white;
+            display: none;
+            #link{
+              left: 15px;
+              font-size: 2.5rem;
+              color: black;
+              position: relative;
+              bottom: -20px;
+              right: -15px;
+            }
+          }
+
+        }
+      }
+
+      #secondary {
+        height: 100%;
+        opacity: 0;
+
+        #girl {
+          height: 150%;
+          min-height: 800px;
+          width: auto;
+        }
+      }
+    }
+  }
+}

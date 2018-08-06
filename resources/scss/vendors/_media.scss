@@ -1,0 +1,21 @@
+@media only screen and ( max-width: 767px){
+  #secondary {
+    display: none;
+  }
+
+  #primary {
+    background: url('../img/photo.jpg');
+    background-size: cover;
+    opacity: 0.7;
+    #text {
+      justify-content: space-around;
+      #denim {
+        color: white;
+      }
+      #link {
+        color: white !important;
+        text-shadow: -1px -1px black;
+      }
+    }
+  }
+}
